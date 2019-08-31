@@ -774,7 +774,7 @@ public class WindowPane extends WidgetGroup implements WindowManager.WindowDragL
         return 0;
     }
 
-    ////
+
     static class Element {
 
         enum State {
@@ -823,7 +823,6 @@ public class WindowPane extends WidgetGroup implements WindowManager.WindowDragL
         private Array<FlexibleWindow> windows = new Array<>(5);
 
         public CompositePane() {
-
             TabbedPane.TabbedPaneStyle style = VisUI.getSkin().get(TabbedPane.TabbedPaneStyle.class);
             style.draggable = false;
             tabbedPane = new TabbedPane(style);
@@ -897,8 +896,6 @@ public class WindowPane extends WidgetGroup implements WindowManager.WindowDragL
 
     }
 
-
-    /////////
 
     @Override
     public void addActorAfter(Actor actorAfter, Actor actor) {
